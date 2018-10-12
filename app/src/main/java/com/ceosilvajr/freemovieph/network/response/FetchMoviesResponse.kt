@@ -10,5 +10,5 @@ data class FetchMoviesResponse(
     val page: Int,
     @SerializedName("total_results") val totalResults: Int,
     @SerializedName("total_pages") val totalPages: Int,
-    @SerializedName("results") val movies: ArrayList<Movie>
+    @SerializedName("results") val movieResponses: ArrayList<MovieResponse>
 )

@@ -23,8 +23,8 @@ Created date 12/10/2018
  **/
 interface ApiService {
 
-  @GET("discover/")
-  fun getMovies(@QueryMap params: HashMap<String, String>): Flowable<FetchMoviesResponse>
+  @GET("discover/movie")
+  fun getMovies(@QueryMap params: HashMap<String, Any>): Flowable<FetchMoviesResponse>
 
   companion object {
     private const val timeOutInSeconds: Long = 30
