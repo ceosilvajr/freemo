@@ -13,6 +13,9 @@ android {
     versionCode rootProject.ext.version_code
     versionName rootProject.ext.version_number
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    buildConfigField "String", "BASE_URL", '"https://api.themoviedb.org/3/"'
+    buildConfigField "String", "API_KEY", '"d75111afb3b687c1b99cb5bdf5fdb98a"'
   }
   buildTypes {
     debug {
